@@ -21,3 +21,12 @@ BLogicReport/BLogicReport.WinPhone/obj/Debug/MainPage.g.cs
 BLogicReport/BLogicReport.WinPhone/obj/Debug/App.g.i.cs
 BLogicReport/BLogicReport.WinPhone/obj/Debug/
 BLogicReport/BLogicReport.UWP/obj/x86/Debug/
+BLogicReport/BLogicReport.Droid/obj/Debug/
+BLogicReport/BLogicReport.iOS/bin/
+BLogicReport/BLogicReport.Windows/bin/
+BLogicReport/BLogicReport.WinPhone/bin/Debug/Xamarin.Forms.Platform.WinRT.Phone.pri
+BLogicReport/BLogicReport.WinPhone/bin/
+BLogicReport/BLogicReport.iOS/obj/
+BLogicReport/BLogicReport.Droid/bin/
+BLogicReport/BLogicReport/bin/
+BLogicReport/BLogicReport/obj/

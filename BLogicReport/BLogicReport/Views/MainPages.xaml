@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BLogicReport.Views.MainPages">
+
+  <StackLayout Spacing="10" x:Name="mainLayout" Orientation="Vertical" VerticalOptions="FillAndExpand">
+    <StackLayout x:Name="severAddressLayout" Orientation="Horizontal">
+      <Entry Keyboard="Numeric" Placeholder="Sever address" Text="192.168.0.102"  HorizontalOptions="FillAndExpand" />
+      <Button Text="Select Sever" VerticalOptions="Start" HorizontalOptions="EndAndExpand" BackgroundColor="Black" TextColor="White" />
+    </StackLayout>
+
+    <ScrollView  Orientation = "Vertical" VerticalOptions="FillAndExpand">
+      <Grid RowSpacing="1" ColumnSpacing="1" BackgroundColor="#2c3e50"  >
+        <Grid.RowDefinitions>
+          <RowDefinition Height="100" />
+          <RowDefinition Height="100" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Text="Shifts Report" Grid.Row="0" Grid.Column="0" BackgroundColor="White" Font="Bold,20"
+             VerticalTextAlignment="Center"  HorizontalTextAlignment = "Center" />
+        <Label Text="Sales Report" Grid.Row="0" Grid.Column="1"  BackgroundColor="White" Font="Bold,20"
+                VerticalTextAlignment="Center"  HorizontalTextAlignment = "Center" />
+
+        <Label Text="Canceled Item Report" Grid.Row="1" Grid.Column="0" BackgroundColor="White" Font="Bold,20"
+                VerticalTextAlignment="Center"  HorizontalTextAlignment = "Center" />
+        <Label Text="Category Report" Grid.Row="1" Grid.Column="1" BackgroundColor="White" Font="Bold,20"
+              VerticalTextAlignment="Center"  HorizontalTextAlignment = "Center" />
+
+        <Label Text="" Grid.Row="2" Grid.Column="0" BackgroundColor="White" Font="Bold,20"
+              VerticalTextAlignment="Center"  HorizontalTextAlignment = "Center" Grid.ColumnSpan="2" />
+
+      </Grid>
+    </ScrollView>
+
+  </StackLayout>
+</ContentPage>
