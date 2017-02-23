@@ -1,0 +1,5 @@
+﻿# key = value (the key will be the same across locales)
+shifstReport = Báo cáo theo Ca làm việc
+salesReportName = Báo cáo doanh thu
+cancelItemReportName = Báo cáo các mặt hàng bị hủy
+categoryReportName= Báo cáo theo Loại mặt hàng

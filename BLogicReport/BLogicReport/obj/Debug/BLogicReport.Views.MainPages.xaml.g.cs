@@ -23,10 +23,14 @@ namespace BLogicReport.Views {
         private global::Xamarin.Forms.StackLayout severAddressLayout;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry TxtSeverAddress;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainPages));
             mainLayout = this.FindByName<global::Xamarin.Forms.StackLayout>("mainLayout");
             severAddressLayout = this.FindByName<global::Xamarin.Forms.StackLayout>("severAddressLayout");
+            TxtSeverAddress = this.FindByName<global::Xamarin.Forms.Entry>("TxtSeverAddress");
         }
     }
 }

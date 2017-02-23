@@ -1,0 +1,5 @@
+﻿# key = value (the key will be the same across locales)
+shiftsReportName = Shifts Report
+salesReportName = Sales Report
+cancelItemReportName = Cancel Item Report
+categoryReportName= CAtegory Report
