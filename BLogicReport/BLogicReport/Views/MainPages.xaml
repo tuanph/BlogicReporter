@@ -5,7 +5,7 @@
 
   <StackLayout Spacing="10" x:Name="mainLayout" Orientation="Vertical" VerticalOptions="FillAndExpand">
     <StackLayout x:Name="severAddressLayout" Orientation="Horizontal">
-      <Entry Keyboard="Numeric" Placeholder="Sever address" Text="192.168.0.102"  HorizontalOptions="FillAndExpand" />
+      <Entry x:Name="TxtSeverAddress" Keyboard="Numeric" Placeholder="Sever address" Text="192.168.0.102"  HorizontalOptions="FillAndExpand" />
       <Button Text="Select Sever" VerticalOptions="Start" HorizontalOptions="EndAndExpand" BackgroundColor="Black" TextColor="White" />
     </StackLayout>
 
@@ -17,14 +17,15 @@
           <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Label Text="Shifts Report" Grid.Row="0" Grid.Column="0" BackgroundColor="White" Font="Bold,20"
+        <Label Text="{Binding Strings[shifstReport]}" Grid.Row="0" Grid.Column="0" BackgroundColor="White" Font="Bold,20"
              VerticalTextAlignment="Center"  HorizontalTextAlignment = "Center" />
-        <Label Text="Sales Report" Grid.Row="0" Grid.Column="1"  BackgroundColor="White" Font="Bold,20"
+        <Label Text="{Binding Strings[salesReportName]}" Grid.Row="0" Grid.Column="1"  BackgroundColor="White" Font="Bold,20"
                 VerticalTextAlignment="Center"  HorizontalTextAlignment = "Center" />
 
-        <Label Text="Canceled Item Report" Grid.Row="1" Grid.Column="0" BackgroundColor="White" Font="Bold,20"
+        <Label Text="{Binding Strings[cancelItemReportName]}" Grid.Row="1" Grid.Column="0" BackgroundColor="White" Font="Bold,20"
                 VerticalTextAlignment="Center"  HorizontalTextAlignment = "Center" />
-        <Label Text="Category Report" Grid.Row="1" Grid.Column="1" BackgroundColor="White" Font="Bold,20"
+        
+        <Label Text="{Binding Strings[categoryReportName]}" Grid.Row="1" Grid.Column="1" BackgroundColor="White" Font="Bold,20"
               VerticalTextAlignment="Center"  HorizontalTextAlignment = "Center" />
 
         <Label Text="" Grid.Row="2" Grid.Column="0" BackgroundColor="White" Font="Bold,20"
