@@ -12,7 +12,7 @@ namespace BLogicReport
         public App()
         {
             // The root page of your application
-            MainPage = new NavigationPage(new Views.MainPages());
+            MainPage = new NavigationPage(new Views.SelectDateTimeControl());
         }
 
         protected override void OnStart()
