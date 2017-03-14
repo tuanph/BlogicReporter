@@ -22,5 +22,11 @@ namespace BLogicReport.Views
             Strings = I18NPortable.I18N.Current as I18N;
             BindingContext = new BaseViewModelcs();
         }
+
+        private async void ShiftReportButton_Clicked(object sender, EventArgs e)
+        {
+            await this.Navigation.PushAsync(new ShiftsReport.ShiftReport());
+            //await this.Navigation.PushAsync(new SelectDateTimeControl());
+        }
     }
 }

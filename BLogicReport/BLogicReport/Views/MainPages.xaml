@@ -17,8 +17,7 @@
           <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Label Text="{Binding Strings[shifstReport]}" Grid.Row="0" Grid.Column="0" BackgroundColor="White" Font="Bold,20"
-             VerticalTextAlignment="Center"  HorizontalTextAlignment = "Center" />
+        <Button Text="{Binding Strings[shifstReport]}" Grid.Row="0" Grid.Column="0" BackgroundColor="White" Font="Bold,20" Clicked="ShiftReportButton_Clicked" />
         <Label Text="{Binding Strings[salesReportName]}" Grid.Row="0" Grid.Column="1"  BackgroundColor="White" Font="Bold,20"
                 VerticalTextAlignment="Center"  HorizontalTextAlignment = "Center" />
 

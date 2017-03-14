@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BLogicReport.Views.SelectDateTimeControl" BackgroundColor="White"  Padding="0">
     <ContentPage.Resources>
@@ -23,22 +23,24 @@
             <RowDefinition Height="45" />
             <RowDefinition Height="45" />
             <RowDefinition Height="45" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="45" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <Button  Grid.Row="0" Grid.Column="0" Text="{Binding Strings[today]}"
-                 Style="{StaticResource myButton}"/>
+                 Style="{StaticResource myButton}" Clicked="ButtonToday_Clicked" />
         <Button  Grid.Row="0" Grid.Column="1" Text="{Binding Strings[thisWeek]}" 
-                 Style="{StaticResource myButton}" />
+                 Style="{StaticResource myButton}" Clicked="ButtonThisWeek_Clicked" />
         <Button  Grid.Row="0" Grid.Column="2" Text="{Binding Strings[lastWeek]}" 
-                 Style="{StaticResource myButton}" />
+                 Style="{StaticResource myButton}" Clicked="ButtonLastWeek_Clicked" />
 
         <Button  Grid.Row="1" Grid.Column="0" Text="{Binding Strings[thisQuater]}" 
-                 Style="{StaticResource myButton}"/>
+                 Style="{StaticResource myButton}" Clicked="ButtonThisQuater_Clicked" />
         <Button  Grid.Row="1" Grid.Column="1" Text="{Binding Strings[lastQuater]}" 
-                 Style="{StaticResource myButton}" />
+                 Style="{StaticResource myButton}" Clicked="ButtonLastQuater_Clicked"  />
         <Button  Grid.Row="1" Grid.Column="2" Text="{Binding Strings[thisYear]}" 
-                 Style="{StaticResource myButton}"/>
+                 Style="{StaticResource myButton}" Clicked="ButtonThisYear_Clicked" />
 
         <Button  Grid.Row="2" Grid.Column="0" x:Name="btn1"
                  Style="{StaticResource myButton}"/>
@@ -65,9 +67,25 @@
                   Style="{StaticResource myButton}"/>
         <Button  Grid.Row="4" Grid.Column="1" x:Name="btn11"
                   Style="{StaticResource myButton}"/>
-        <Button  Grid.Row="4" Grid.Column="2" x:Name="btn12"
+        <Button  Grid.Row="4" Grid.Column="2" x:Name="btn12" 
                  Style="{StaticResource myButton}"/>
 
+        <StackLayout Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" 
+                     Orientation="Horizontal" Padding="1,0">
+            <Label Text="Start" VerticalOptions="Center"/>
+            <DatePicker  x:Name="pickerStartDate" HorizontalOptions="EndAndExpand" />
+            <TimePicker x:Name="pickerStartTime"   HorizontalOptions="EndAndExpand"  />
+        </StackLayout>
 
+        <StackLayout Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" 
+                     Orientation="Horizontal" Padding="1,0">
+            <Label Text="End" VerticalOptions="Center"/>
+            <DatePicker  x:Name="pickerEndDate" HorizontalOptions="EndAndExpand" />
+            <TimePicker  x:Name="pickerEndTime" HorizontalOptions="EndAndExpand"  />
+        </StackLayout>
+
+        <Button Text="Apply"  Grid.Row="5" Grid.Column="2" Grid.RowSpan="2"
+                 Style="{StaticResource myButton}" HeightRequest="90" />
     </Grid>
-</ContentPage>
+  
+</ContentView>
